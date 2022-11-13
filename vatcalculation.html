@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vat calculation</title>
+    <script>
+        function calculateTotal() {
+            let price = document.getElementById("priceId").value;
+            let VAT = document.getElementById("vatId").value;
+            let result = (parseFloat(price) * (1+ parseFloat(VAT))).toFixed(2);
+            document.getElementById("total").innerHTML = `total: ${result}`;
+        
+        }
+    </script>
+</head>
+<body>
+    <input id="priceId" type="number" placeholder="enter price" />
+    <input id="vatId" type="number" placeholder="enter vat" />
+    <button onclick="calculateTotal()"> calculate total</button>
+    <p id="total"></p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+      <body>
+        <p id="demo"></p>
+
+        <script>
+            const cars = [
+         {                 name : "BMW",
+                           model: 250,
+                           weight: 1500,
+          },
+          {
+
+                           name : "Volvo",
+                           model: "q1",
+                           weight: 1200,
+          },
+          {
+
+                           name : "Saab",
+                           model: "f2",
+                           weight: 1600,
+          },
+          {
+
+                           name : "Ford",
+                           model: "mus",
+                           weight: 1800,
+          }
+              ];
+
+            
+            let text = "";
+            for (let index = 0; index < cars.length; index++) {
+              console.log("name:", cars[index].name);
+              console.log("name:", cars[index].model);
+              console.log("name:", cars[index].weight);
+              text += `cars ${cars[index].model} weight: ${cars[index].weight}<br>`;
+            }
+
+            document.getElementById("demo").innerHTML = text;
+        </script>
+      </body>
+    </html>
+  </body>
+</html>

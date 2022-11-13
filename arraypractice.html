@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <p id="demo1"></p>
+<p id="demo2"></p>
+
+<h1> sorted array popping means removing string from an array</h1>
+
+<p id="demo3"></p>
+<p id="demo4"></p>
+<h1>push means adding data to an array</h1>
+
+<p id="demo5"></p>
+<p id="demo6"></p>
+<h1>shift means removing data to an array working on first element</h1>
+
+
+<p id="demo7"></p>
+<p id="demo8"></p>
+<h1>shift means adding data to an array working on last element</h1>
+
+
+
+<script>
+
+// const array = [4 , 2 , 5 , 3, 100, 5356, 3699];
+// array.sort((a, b) => a - b)
+// console.log("sorted array:", array);
+// const maxValue = array[array.length -1 ];
+// console.log("maxValue::", maxValue);
+// const minValue = array[0];
+// console.log("minValue::", minValue);
+
+// const array = [4 , 2 , 5 , 3, 100, 5356, 3699];
+// const maxValue= Math.max.apply(null, array)
+// console.log("maxValue",maxValue);
+
+
+
+// const minValue = Math.min.apply(null,array);
+// console.log("minValue::", minValue);
+
+
+
+
+
+const cars = [
+  {name:"xyz", type:"Volvo", year:2016},
+  {name:"pqr",type:"Saab", year:2021},
+  {name:"abc",type:"BMW", year:2010}
+];
+cars.sort((a, b) => b.year  - a.year);
+console.log("cars", cars);
+
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango",32 ,2, "to", "zebra", "yes"];
+// document.getElementById("demo1").innerHTML = fruits;
+// fruits.sort()   
+// // (function(a, b){return b-a});
+// document.getElementById("demo2").innerHTML ="sorted array:" + fruits;
+// const array = [100, 20 ,030, 5, 80, 45]
+// console.log(array.sort((a, b) => b - a))
+
+
+// const cars = ["bmw", "audi", "volvo", "tata"];
+// document.getElementById("demo3").innerHTML = cars;
+// cars.push("mahindra");
+// document.getElementById("demo4").innerHTML = cars;
+
+// const vegitabbles = ["potato", "tomato", "cabage", "lfinger"];
+// document.getElementById("demo5").innerHTML = vegitabbles;
+// vegitabbles.shift();
+// document.getElementById("demo6").innerHTML = vegitabbles;
+
+// const vegitabble = ["potato", "tomato", "cabage", "lfinger"];
+// document.getElementById("demo7").innerHTML = vegitabble;
+// vegitabble.unshift("lemon");
+// document.getElementById("demo8").innerHTML = vegitabble;
+
+
+
+
+</script>
+
+</body>
+</html>

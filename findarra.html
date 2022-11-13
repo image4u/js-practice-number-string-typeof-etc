@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <script>
+      //         const numbers = [4, 9, 16, 25, 29];
+      // let first = numbers.find(myFunction);
+
+      // document.getElementById("demo").innerHTML = "First number over 18 is " + first;
+
+      // function myFunction(value, index, array) {
+      //   return value > 18;
+      // }
+      // console.log(first);
+
+      const cars = [
+        { name: "tata", year: 1996 },
+        { name: "maruti", year: 2000 },
+        { name: "bmw", year: 1990 },
+        { name: "hundai", year: 2004 },
+      ];
+      const filterdCars = cars.find((value) => {
+        return value.year > 1990;
+      });
+      console.log("filtered funcreturned::", filterdCars);
+    </script>
+  </body>
+</html>
